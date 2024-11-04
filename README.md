@@ -1,15 +1,11 @@
 # LITA-CAPSTONE-PROJECT-2 
----
+
 ## Project Title: Customer Data Analysis
----
-### Introduction
-This project used 
 
 ## Project Overview
----
+Analyse customer subscription data to identify, optimize Revenue and cutomer retention
 
 ### Data Collected
----
 This project involves analyzing customer data to gain insights and inform business decisions. The dataset includes the following fields:
 
 - CustomerID
@@ -22,7 +18,6 @@ This project involves analyzing customer data to gain insights and inform busine
 - Revenue
 
 ## Objectives
----
 The key objectives for this analysis are:
 1. Understand the distribution and trends of customer subscriptions by region, type, and duration.
 2. Identify any patterns or factors that contribute to customer churn (canceled subscriptions).
@@ -53,14 +48,16 @@ In the initial cleaning phase of the data cleaning and preparation, we perform t
  2. Data cleaning and removing of duplicate columns
 
 ## Exploratory Data Analysis
+- What is the total number of customer from each region?
+- What is the most popular subcription type by customers?
 * Analyzed the distribution of customers by region, showing the top regions by number of customers.
-* Looked at the breakdown of subscription types, including the percentage of customers on each type.
-* Calculated the average subscription duration and identified the longest and shortest subscriptions.
-* Determined the overall cancellation count by calculating the percentage of canceled subscriptions.
-* Identified the regions and subscription types with the highest cancellation count
-* Summed the total revenue across all customers.
-* Calculated the average revenue per customer and per subscription.
-* Examined the relationship between subscription details (type, duration) and revenue generated.
+- Looked at the breakdown of subscription types, including the percentage of customers on each type.
+- Calculated the average subscription duration and identified the longest and shortest subscriptions.
+- Determined the overall cancellation count by calculating the percentage of canceled subscriptions.
+- Identified the regions and subscription types with the highest cancellation count
+- Summed the total revenue across all customers.
+- Calculated the average revenue per customer and per subscription.
+
 
 
 ## SQL ( Querying the Data)
@@ -147,6 +144,7 @@ FROM [dbo].[CustomerData$]
 ![image](https://github.com/user-attachments/assets/1faa229a-cf94-4ac1-bb2a-39311679f37a)
 
 
+## PPOWER BI ( CREATING VISUALIZATION)
 
 
 
@@ -154,14 +152,13 @@ FROM [dbo].[CustomerData$]
 
 
 ### Key Findings
-* The West region had the highest number of customers, but also the highest churn rate.
-* Monthly subscriptions had a much higher churn rate compared to annual subscriptions.
-* Customers with longer subscription durations tended to generate more revenue.
+- The North region had the highest cancellation count.
+-  The most subscribed subscription type is basic
+-  Customers with longer subscription durations tended to generate more revenue.
 
 ## Recommendations
 Based on the insights gathered, some key recommendations include:
 
-1. Investigate ways to reduce churn in the West region and for monthly subscriptions, such as offering incentives for longer commitments.
+1. Investigate ways to reduce cancellation count in the North region region and for subscriptions duration, such as offering incentives for longer commitments.
 2. Explore opportunities to convert more customers to annual subscriptions, as these appear to be more profitable.
 3. Consider targeted marketing or retention efforts for customers approaching the end of their subscription term.
-4. Further analyze the factors driving higher-value customers to inform acquisition and upselling strategies.
