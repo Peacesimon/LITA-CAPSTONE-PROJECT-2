@@ -1,6 +1,15 @@
-# LITA-CAPSTONE-PROJECT-2
+# LITA-CAPSTONE-PROJECT-2 
+---
+## Project Title: Customer Data Analysis
+---
+### Introduction
+This project used 
 
 ## Project Overview
+---
+
+### Data Collected
+---
 This project involves analyzing customer data to gain insights and inform business decisions. The dataset includes the following fields:
 
 - CustomerID
@@ -13,8 +22,8 @@ This project involves analyzing customer data to gain insights and inform busine
 - Revenue
 
 ## Objectives
+---
 The key objectives for this analysis are:
-
 1. Understand the distribution and trends of customer subscriptions by region, type, and duration.
 2. Identify any patterns or factors that contribute to customer churn (canceled subscriptions).
 3. Analyze the relationship between subscription details and revenue generated.
