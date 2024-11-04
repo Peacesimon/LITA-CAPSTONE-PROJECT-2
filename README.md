@@ -117,9 +117,34 @@ SELECT SubscriptionType, sum (Revenue) as Total_Revenue
 FROM [dbo].[CustomerData$]
 GROUP BY Subscriptiontype
 ```
-Expected Result
+
+#### Expected Result
 ![image](https://github.com/user-attachments/assets/6bd38d52-041b-44a0-a960-df22c4968dc2)
 
+
+### Top 3 Region by by Subscription cancellation
+```SQL
+SELECT TOP 3 Region, COUNT(CustomerID) AS CancellationCount
+FROM [dbo].[CustomerData$]
+WHERE Canceled = 1
+GROUP BY Region
+ORDER BY CancellationCount DESC
+```
+
+#### Expected Result
+![image](https://github.com/user-attachments/assets/63098048-c687-417a-9fe7-2a8a5a3cd5a5)
+
+
+### Total Number of Active and Cancelled subscription
+```SQL
+SELECT
+SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM [dbo].[CustomerData$]
+```
+
+#### Expected Result
+![image](https://github.com/user-attachments/assets/1faa229a-cf94-4ac1-bb2a-39311679f37a)
 
 
 
